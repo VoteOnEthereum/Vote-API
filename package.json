@@ -1,0 +1,22 @@
+{
+  "name": "vote-api",
+  "version": "0.0.1",
+  "description": "",
+  "main": "Vote.js",
+  "scripts": {
+    "test": "mocha ./test.js"
+  },
+  "author": "Nicolas Mahe",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.15.3",
+    "sha.js": "^2.4.8",
+    "ethjs-provider-signer": "^0.1.4",
+    "truffle-contract": "^1.1.10",
+    "web3": "^0.18.2"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "ethjs-signer": "^0.1.1"
+  }
+}
