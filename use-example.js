@@ -49,7 +49,7 @@ vote.create("Who is the best?")
 
 //get number of vote
 .then(_ => {
-  retrun vote.numberOfVote
+  return vote.numberOfVote
 })
 .then(numberOfVote => {
   console.log(numberOfVote + " total votes");
