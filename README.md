@@ -2,6 +2,10 @@
 
 This package provide an easy to use API for interacting with the Vote Contract in a blockchain.
 
+## Dependencies
+
+- [Testrpc](https://github.com/ethereumjs/testrpc) for local development blockchain
+
 ## Installation
 
 ```console
