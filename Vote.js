@@ -49,7 +49,7 @@ class Vote {
       provider = new SignerProvider(this.providerURL, {
         signTransaction: (rawTx, cb) => {
 
-          let promiseSigner
+          let promiseSigner = Promise.reject("no signer provide")
           if(this.signer !== undefined) {
             promiseSigner = this.signer(rawTx)
           }
@@ -60,6 +60,9 @@ class Vote {
           promiseSigner
           .then(signedTx => {
             cb(null, signedTx)
+          })
+          .catch(error => {
+            console.log("error", error)
           })
         }
       });
